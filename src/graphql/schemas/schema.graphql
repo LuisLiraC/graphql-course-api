@@ -1,3 +1,10 @@
 type Query {
-    hello: String
+    hello: String!
+    getCharacters: [Character]
+}
+
+type Character {
+    id: ID
+    name: String
+    race: String
 }
