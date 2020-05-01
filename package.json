@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts --exec ts-node src/index.ts -e ts,graphql"
+  },
+  "keywords": [],
+  "author": "LuisLiraC <luisliradev@gmail.com> (https://luislira.xyz/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/express-graphql": "^0.9.0",
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.12.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "graphql-import-node": "0.0.4",
+    "graphql-tools": "^5.0.0",
+    "ncp": "^2.0.0"
+  }
+}

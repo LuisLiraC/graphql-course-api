@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "lib": ["dom", "ES6"],
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "removeComments": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}
