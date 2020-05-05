@@ -6,5 +6,11 @@ type Query {
 type Character {
     id: ID
     name: String
-    race: String
+    race: Race
+}
+
+enum Race {
+    HYLIAN
+    GERUDO
+    FAIRY
 }
