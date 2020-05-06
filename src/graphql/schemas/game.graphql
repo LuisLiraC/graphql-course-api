@@ -1,0 +1,8 @@
+type Query {
+    gameHello: String
+}
+
+type Game {
+    id: ID
+    title: String
+}

@@ -1,12 +1,14 @@
 import { GraphQLSchema } from 'graphql'
-import { makeExecutableSchema } from 'graphql-tools'
+import { mergeSchemas } from 'graphql-tools'
 import 'graphql-import-node'
-import rootSchema from './schemas/schema.graphql'
-import resolvers from './resolvers/resolversMap'
+import character from './schemas/character.graphql'
+import game from './schemas/game.graphql'
+import resolvers from './resolvers'
 
-export const schema: GraphQLSchema = makeExecutableSchema({
-  typeDefs: [
-    rootSchema
+export const schema: GraphQLSchema = mergeSchemas({
+  schemas: [
+    character,
+    game
   ],
   resolvers
 })
