@@ -1,16 +1,23 @@
 type Query {
-    hello: String!
     getCharacters: [Character]
+    getCharacter(_id: ID!): Character
 }
 
 type Character {
-    id: ID
+    _id: ID
     name: String
     race: Race
+    gender: Gender
+    games: [Game]
 }
 
 enum Race {
     HYLIAN
     GERUDO
     FAIRY
+}
+
+enum Gender {
+    MALE
+    FEMALE
 }
