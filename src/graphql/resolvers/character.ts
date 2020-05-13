@@ -11,6 +11,13 @@ export const characterResolver: IResolvers = {
       return found
     }
   },
+  Mutation: {
+    createCharacter(root: void, args: any) {
+      args.character._id = `${data.characters.length + 1}`
+      data.characters.push(args.character)
+      return 'Character added successfully'
+    }
+  },
   Character: {
     games(parent: any) {
       const gameList: Array<any> = []
