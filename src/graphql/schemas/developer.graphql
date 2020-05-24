@@ -1,0 +1,16 @@
+type Query {
+    getDevelopers: [Developer]
+}
+
+type Mutation {
+    createDeveloper(developer: NewDeveloperInput!): String!
+}
+
+type Developer {
+    _id: ID
+    name: String
+}
+
+input NewDeveloperInput {
+    name: String!
+}

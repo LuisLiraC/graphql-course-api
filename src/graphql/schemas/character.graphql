@@ -5,6 +5,7 @@ type Query {
 
 type Mutation {
     createCharacter(character: NewCharacterInput!): String!
+    editCharacter(_id: ID!, character: EditCharacterInput!): String!
 }
 
 type Character {
@@ -33,4 +34,12 @@ input NewCharacterInput {
     gender: Gender!
     games: [String!]!
     image: String!
+}
+
+input EditCharacterInput {
+    name: String
+    race: Race
+    gender: Gender
+    games: [String!]
+    image: String
 }
