@@ -29,5 +29,18 @@
             "_id": "2",
             "title": "Majora's Mask"
         }
+    ],
+    "people": [
+        {
+            "id": "1",
+            "name": "Link",
+            "address": "Kokiri Forest",
+            "age": 10
+        },
+        {
+            "id": "2",
+            "name": "Zelda",
+            "address": "Hylian Castle"
+        }
     ]
 }

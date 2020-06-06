@@ -1,0 +1,24 @@
+type Query {
+    getPerson(id: ID!): Person
+}
+
+union Person = Male | Female
+
+interface GeneralData {
+    id: ID
+    name: String
+    address: String
+}
+
+type Male implements GeneralData {
+    id: ID
+    name: String
+    address: String
+    age: Int
+}
+
+type Female implements GeneralData {
+    id: ID
+    name: String
+    address: String
+}
