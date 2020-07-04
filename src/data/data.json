@@ -35,12 +35,24 @@
             "id": "1",
             "name": "Link",
             "address": "Kokiri Forest",
-            "age": 10
+            "age": 10,
+            "countries": [
+                "1"
+            ]
         },
         {
             "id": "2",
             "name": "Zelda",
             "address": "Hylian Castle"
+        }
+    ],
+    "countries": [
+        {
+            "id": "1",
+            "name": "Hyrule",
+            "people": [
+                "1"
+            ]
         }
     ]
 }

@@ -8,6 +8,7 @@ interface GeneralData {
     id: ID
     name: String
     address: String
+    countries: [Country]
 }
 
 type Male implements GeneralData {
@@ -15,10 +16,18 @@ type Male implements GeneralData {
     name: String
     address: String
     age: Int
+    countries: [Country]
 }
 
 type Female implements GeneralData {
     id: ID
     name: String
     address: String
+    countries: [Country]
+}
+
+type Country {
+    id: ID
+    name: String
+    people: [Person]
 }
