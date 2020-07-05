@@ -9,11 +9,13 @@ type Mutation {
 type Game {
     _id: ID
     title: String
+    cover: String
     developers: [Developer]
 }
 
 input NewGameInput {
     title: String!
     developers: [String!]!
+    cover: String!
 }
 
