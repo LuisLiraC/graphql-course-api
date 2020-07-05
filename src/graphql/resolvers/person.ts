@@ -19,7 +19,6 @@ export const personResolver: IResolvers = {
       parent.countries.forEach((countryId: any) => 
         countries.push(...data.countries.filter(c => c.id === countryId))
       )
-      console.log(countries)
       return countries
     }
   },

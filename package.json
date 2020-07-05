@@ -15,23 +15,23 @@
     "@types/express": "^4.17.6",
     "@types/express-graphql": "^0.9.0",
     "@types/graphql-depth-limit": "^1.1.2",
-    "@types/mongodb": "^3.5.16",
-    "@types/node": "^13.13.4",
-    "nodemon": "^2.0.3",
-    "ts-node": "^8.9.1",
-    "typescript": "^3.8.3"
+    "@types/mongodb": "^3.5.25",
+    "@types/node": "^13.13.12",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
   },
   "dependencies": {
-    "apollo-server-express": "^2.12.0",
+    "apollo-server-express": "^2.15.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "graphql": "^15.0.0",
+    "graphql": "^15.2.0",
     "graphql-depth-limit": "^1.1.0",
     "graphql-import-node": "0.0.4",
     "graphql-merge-resolvers": "^1.1.16",
     "graphql-tools": "^5.0.0",
-    "mongodb": "^3.5.7",
+    "mongodb": "^3.5.9",
     "ncp": "^2.0.0"
   }
 }
